@@ -1,0 +1,19 @@
+Removing Added Column
+>setwd("C:/Users/rantali/Desktop/College/5250/R Project/Dataset")
+> ds_music<-read.csv("top50list.csv", header = T, sep = ",")
+> View(ds_music)
+> data_col_1_6<-ds_music[,-c(1,6)]
+> View(data_col_1_6)
+> 
+>
+
+Deleting NA top genre
+> setwd("C:/Users/rantali/Desktop/College/5250/R Project/Dataset")
+> View(data_col_1_6)
+> delete_genre_raw<-na.omit(data_col_1_6)
+> View(delete_genre_raw)
+> 
+>
+
+
+
